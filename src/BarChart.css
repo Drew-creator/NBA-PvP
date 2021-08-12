@@ -1,0 +1,11 @@
+.BarChart {
+    max-width: 50%;
+    margin-left: 40em;
+}
+
+@media only screen and (max-width: 2000px) {
+    .BarChart {
+        max-width: 100%;
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,218 @@
+.PlayerForm-input {
+    margin: 2em;
+    color: whitesmoke;
+    width: 150px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    height: 40px;
+    background-color: rgba(104, 105, 112, 0.329);
+    border-color: rgb(196, 194, 194);
+    border-radius: 10px 10px 10px 10px;
+}
+.PlayerForm-input:focus {
+    width: 300px;
+}
+
+.PlayerForm-submit {
+    background-color: transparent;
+    margin-left: 70%;
+    padding: 15px 45px;
+    text-align: left;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    display: block;
+}
+
+ .PlayerForm-submit:hover {
+   color: black;
+   background-color: white;
+   text-decoration: none;
+ } 
+
+ .PlayerForm-dropdown1 {
+    position: relative;
+    margin: 10px;
+    padding: 15px;
+    width: 50em;
+    background-color: rgba(68, 68, 73, 0.329);
+    border-color: rgb(196, 194, 194);
+    border-radius: 10px 10px 10px 10px;
+    color: whitesmoke;
+}
+/* .PlayerForm-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.PlayerForm-tooltip-text {
+    font-size: 15px;
+    color: white;
+} */
+
+.help-tip{
+	position: absolute;
+    top: 11.9%;
+	left: 65%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	border: 2px solid #444;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	font-size: 24px;
+	line-height: 42px;
+	cursor: default;
+}
+
+.help-tip:before{
+    content:'?';
+    font-family: sans-serif;
+    font-weight: normal;
+    color:#444;
+}
+
+.help-tip:hover p{
+    display:block;
+    transform-origin: 100% 0%;
+    -webkit-animation: fadeIn 0.3s ease;
+    animation: fadeIn 0.3s ease;
+}
+
+.help-tip p {    
+	display: none;
+	font-family: sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+	background-color: #FFFFFF;
+	padding: 12px 16px;
+	width: 178px;
+	height: auto;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 5%);
+	border-radius: 3px;
+	box-shadow: 0 0px 20px 0 rgba(0,0,0,0.1);
+	color: #37393D;
+	font-size: 12px;
+	line-height: 18px;
+	z-index: 99;
+}
+
+.help-tip p a {
+	color: #067df7;
+	text-decoration: none;
+}
+
+.help-tip p a:hover {
+	text-decoration: underline;
+}
+
+.help-tip p:before { 
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom-color:#FFFFFF;
+	top: -9px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.help-tip p:after {
+	width: 10px;
+	height: 40px;
+	content:'';
+	position: absolute;
+	top: -40px;
+	left: 0;
+}
+
+/* CSS animation */
+@-webkit-keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:100%; }
+}
+
+@keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:100%; }
+}
+
+#PlayerForm-p1-icon {
+    color: blue;
+}
+
+#PlayerForm-p2-icon {
+    color: red;
+}
+
+.fa-info-circle {
+    color: white;
+}
+
+@media screen and (max-width: 2000px){
+    .help-tip {
+        left: 85%;
+        top: 12%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .PlayerForm-dropdown1 {
+        width: 20em;
+    }
+    .PlayerForm-input {
+        margin: 1em;
+    }
+    .PlayerForm-submit {
+        margin-top: 2em;
+        margin-bottom: 3em;
+    }
+    .help-tip {
+        left: 50%;
+        top: 12%;
+    }
+}
+
+@media only screen and (max-width: 454px), (pointer: coarse), (hover: none) {
+    .PlayerForm-dropdown1 {
+        width: 20em;
+    }
+    .PlayerForm-input {
+        width: 100px;
+    }
+    .PlayerForm-submit {
+        margin-top: 1em;
+        margin-left: 11em;
+        margin-bottom: 3em;
+    }
+    .help-tip {
+        left: 90%;
+        top: 8%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .PlayerForm-submit {
+        margin-left: 10em;
+    }
+    .help-tip {
+        left: 90%;
+        top: 20%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .PlayerForm-submit {
+        margin-left: 8.5em;
+    }
+    .help-tip {
+        top: 9%;
+    }
+}
+

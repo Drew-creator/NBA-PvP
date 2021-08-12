@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+.PlayerList-nav-links {
+    background-color: rgb(197, 190, 190);
+    font-family: "Montserrat", sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    border-radius: 25px;
+}
+
+li a:hover {
+    background-color: #111;
+    color:rgb(245, 245, 245);
+}
+
+.fa-spinner {
+    font-size: 6rem;
+}
+
+.PlayerList-title {
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 45px;
+}
+
+.PlayerList-spinner {
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 35%;
+    left: 45%;
+}
+
+.PlayerList-stats {
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+}
+
+.PlayerList-p1-stat {
+    color: blue;
+}
+
+.PlayerList-p2-stat {
+    color: red;
+}
+
+.PlayerList-first-P {
+    color: blue;
+}
+
+.PlayerList-second-P {
+    color: red;
+}
+
+.PlayerList-background {
+    position: absolute;
+    width:  100%;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.PlayerList-more {
+    background-color: transparent;
+    margin-left: 46.5%;
+    margin-bottom: 7em;
+    padding: 15px 45px;
+    text-align: left;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    display: block;
+}
+
+ .PlayerList-more:hover {
+   color: black;
+   background-color: white;
+   text-decoration: none;
+ } 
+
+.PlayerList-intro {
+    color: white;
+    font-family: 'Staatliches', cursive;
+}
+.PlayerList-card {
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    padding: 60px;
+    border-radius: 25px; 
+    background-image: url("card.jpg");
+    background-size: 100% 100%;
+    box-shadow: 0px 5px 24px 6px #525252;
+}
+
+.PlayerList-card-content {
+    color: white;
+}
+
+
+.PlayerList-card-content button {background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%)}
+.PlayerList-card-content button {
+    margin-top: 3em;
+    margin-left: 20em;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;          
+    border-radius: 10px;
+    display: block;
+    border-color: #e52d27;
+}
+
+ .PlayerList-card-content button:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ @media only screen and (max-width: 768px) {
+     .PlayerList-card {
+         top: 35%;
+         left: 16%
+     }
+     .PlayerList-more {
+         margin-left: 22em;
+     }
+ }
+
+ @media only screen and (max-width: 454px) {
+    .PlayerList-spinner {
+        left: 33%;
+    }
+    .PlayerList-card {
+        width: 9em;
+        height: 3em;
+        left: 18%;
+    }
+    .PlayerList-card h1 {
+        position: relative;
+        font-size: 23px;     
+        margin-bottom: 0;
+    }
+    .PlayerList-card p {
+       font-size: 12px;
+    }
+    .PlayerList-card-content button {
+        margin-top: 5em;
+        margin-left: 0;
+    }
+    .PlayerList-more {
+        margin-left: 10em;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .PlayerList-card {
+        left: 15%;
+    }
+    .PlayerList-more {
+        margin-left: 7em;
+    }
+}
+
+
+
+
+
+

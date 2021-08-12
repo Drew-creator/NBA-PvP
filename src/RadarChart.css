@@ -1,0 +1,12 @@
+.RadarChart {
+    max-width: 50%;
+    margin-left: 40em;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 2000px) {
+    .RadarChart {
+        max-width: 100%;
+        margin-left: 0px;
+    }
+} 
